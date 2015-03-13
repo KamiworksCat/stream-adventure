@@ -7,7 +7,7 @@ function buffering(buffer){
 	process.stdout.write('\n')
 }
 
-process.stdin.pipe(bufferTxt)
+process.stdin.pipe(process.stdout)
 
 /* Official Solution
 var concat = require('concat-stream');
